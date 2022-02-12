@@ -1,2 +1,2 @@
 # Juego_PingPong-
-Juego de pong pong creado apra practica del curso de javascript
+Juego de ping pong creado para practica del curso de javascript en sofka
