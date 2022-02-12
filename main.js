@@ -23,7 +23,6 @@
         this.x = x;
         this.y = y;
         this.radius = radius;
-
         this.speed_y = 0;
         this.speed_x = 3;
         this.board = board;
@@ -116,8 +115,8 @@
             }
         },
         check_collicions : function(){
-            for(var i = this.board.elements.length -1; i>=0; i--){              //iteramos las barras
-                var bar = this.board.elements[i];
+            for(var i = this.board.bars.length -1; i>=0; i--){              //iteramos las barras
+                var bar = this.board.bars[i];
                 if(hit(bar, this.board.ball)){
                     this.board.ball.collision(bar);
                 };
