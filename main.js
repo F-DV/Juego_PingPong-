@@ -208,12 +208,10 @@ document.addEventListener("keydown", function(ev){                  //Cuando el 
         board.playing = !board.playing;                                 //Asigna el contrario de lo que este pasando, si esta jugando en pausa y viceversa
     }
 
-    console.log(""+ bar);                                           //ealizamos la concatenacion para que se ejecute el metodo toString de bar                       
+    //console.log(""+ bar);                                           //analizamos la concatenacion para que se ejecute el metodo toString de bar                       
 });
 
 board_view.play();
-
-//window.requestAnimationFrame(controller);
 
 function controller(){                                                    //clase que hara las veces de CONTROLADOR
     board_view.play();                                                      //funcion de la clase boardview que dibuja y borra
