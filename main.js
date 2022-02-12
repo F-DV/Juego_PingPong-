@@ -54,7 +54,7 @@
             var normalized_intersect_y = relative_intersect_y / (bar.height / 2);
 
             this.bounce_angle = normalized_intersect_y * this.max_bounce_angle;
-            console.log(this.bounce_angle);
+            //console.log(this.bounce_angle);
             this.speed_y = this.speed * -Math.sin(this.bounce_angle);
             this.speed_x = this.speed * Math.cos(this.bounce_angle);
 
@@ -85,9 +85,9 @@
         up: function(){
             this.y -= this.speed;
         },
-        toString: function(){                       //el metodo toString se  ejecuta cuando se convierte este objeto a cadena
+     /*   toString: function(){                       //el metodo toString se  ejecuta cuando se convierte este objeto a cadena
             return "x: "+ this.x + " y: "+this.y;       
-        }
+        }*/
     }
 })();
 
@@ -188,7 +188,7 @@ var ball = new Ball(350, 100, 10, board);                           //definimos 
 window.requestAnimationFrame(controller);
 
 document.addEventListener("keydown", function(ev){                  //Cuando el keydown suceda, se ejecuta la funcion 
-    console.log(ev.keyCode);                                        //Imprime el caracter de la tecla que se presiono
+    //console.log(ev.keyCode);                                        //Imprime el caracter de la tecla que se presiono
                                              //para que con las flechas no se muesva la ventana
 
     if(ev.keyCode ==38){                                            //Si la tecla es 38 entonces llama el metoho de la clase bar : up() (BARRA 1)
